@@ -3,6 +3,7 @@ package com.najdimu.currencyconverter.di
 import com.najdimu.currencyconverter.data.CurrencyApi
 import com.najdimu.currencyconverter.main.DefaultMainRepository
 import com.najdimu.currencyconverter.main.MainRepository
+import com.najdimu.currencyconverter.others.BASE_URL
 import com.najdimu.currencyconverter.utils.DispatcherProvider
 import dagger.Module
 import dagger.Provides
@@ -16,7 +17,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
-private const val BASE_URL = "https://api.apilayer.com/"
 
 @Module
 @InstallIn(ApplicationComponent::class)

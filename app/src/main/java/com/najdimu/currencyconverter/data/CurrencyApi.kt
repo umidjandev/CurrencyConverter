@@ -17,8 +17,8 @@ interface CurrencyApi {
     @GET("fixer/latest")
     suspend fun getConvert(
         @Query("apikey") apikey: String,
-        @Query("symbols") symbols: String,
-        @Query("base") base: String
+        @Query("base") base: String,
+        @Query("symbols") symbols: String
     ): Response<ConvertResponse>
 
 }
